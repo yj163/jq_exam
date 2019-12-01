@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+    <style>
+        #div{
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div id="div"></div>
+    <script>
+        $('#div').mousemove(function(e) {  
+            var pageX=e.pageX;          
+            var pageY=e.pageY;         
+            alert('宽：'+pageX+'高：'+pageY);          
+        }) 
+    </script>      
+</body>
+
+</html>

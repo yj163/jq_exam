@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+    <style>
+        .even{
+            background: red;
+        }
+        .odd{
+            background: blue;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr style="background: green;"><th>111</th><th>222</th><th>333</th></tr>
+        </thead>
+        <tbody>
+            <tr><th>1</th><th>2</th><th>3</th></tr>
+            <tr><th>1</th><th>2</th><th>3</th></tr>
+            <tr><th>1</th><th>2</th><th>3</th></tr>
+            <tr><th>1</th><th>2</th><th>3</th></tr>
+            <tr><th>1</th><th>2</th><th>3</th></tr>
+            <tr><th>1</th><th>2</th><th>3</th></tr>
+        </tbody>
+    </table>
+    <script>
+        $(function(){
+            $("tr:odd").addClass("odd");
+            $("tr:even").addClass("even");
+        })
+    </script>
+</body>
+
+</html>

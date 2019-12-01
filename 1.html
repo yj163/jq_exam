@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FAQ</title>
+    <script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+    <style>
+        .f1,.f2,.f3{
+            background-color: yellow;
+            height: 50px;
+            width: 100%;
+        }
+        .q1,.q2,.q3{
+            display: none;
+            background-color: blue;
+            height: 100px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="f1">问题一</div>
+    <div class="q1">11111111111111111111111111</div>
+    <div class="f2">问题二</div>
+    <div class="q2">22222222222222222222222222222222</div>
+    <div class="f3">问题三</div>
+    <div class="q3">3333333333333333333333333333333</div>
+    <script>
+        $(function(){
+            $('.f1').on({
+                mouseover : function(){
+                    $('.q1').css('display','block');
+                } ,
+                mouseout : function(){
+                    $('.q1').css('display','none');
+                } 
+			});
+            $('.f2').on({
+                mouseover : function(){
+                    $('.q2').css('display','block');
+                } ,
+                mouseout : function(){
+                    $('.q2').css('display','none');
+                } 
+			});
+            $('.f3').on({
+                mouseover : function(){
+                    $('.q3').css('display','block');
+                } ,
+                mouseout : function(){
+                    $('.q3').css('display','none');
+                } 
+			});
+        })
+    </script>
+</body>
+
+</html>
